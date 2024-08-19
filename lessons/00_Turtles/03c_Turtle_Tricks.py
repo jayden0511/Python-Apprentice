@@ -20,5 +20,7 @@ tina = turtle.Turtle()                  # Create a turtle named tina
 
 
 ... # Your code here
-
+import turtle
+turtle.setup (width=600, height=600)
+tina = turtle.Turtle()
 turtle.exitonclick()                    # Close the window when we click on it
