@@ -23,5 +23,16 @@ for color in colors:                            # loop through the colors
 # 2) Make another square, but put the colors in reverse order, using a negative index. 
 
 ... # Your code here
+import turtle                           
+turtle.setup (width=600, height=600)    
 
+tina = turtle.Turtle()                  
+
+tina.shape('turtle')                    
+tina.speed(2)                           
+
+
+colors = [ 'red', 'blue', 'black', 'orange']    
+
+for color in colors:    
 tina.done()
