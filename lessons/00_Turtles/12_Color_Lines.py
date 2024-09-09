@@ -34,5 +34,8 @@ tina.speed(2)
 
 colors = [ 'red', 'blue', 'black', 'orange']    
 
-for color in colors:    
+for color in colors: 
+    tina.color(color)  
+    tina.forward(100)
+    tina.left(90) 
 tina.done()
