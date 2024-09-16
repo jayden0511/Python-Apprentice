@@ -27,7 +27,7 @@ for i in range(5):
 
 # Prints out 5 random decimal numbers between 1.2 and 34.5 (1.2 and 34.5 both included)
 for i in range(5):
-    number = random.uniform(1.2, 34.5)
+    number = random.uniform(1.2, 34.5) 
     print(number)
 
     # TODO Print out 5 random decimal numbers between -123.45 and 67.89
