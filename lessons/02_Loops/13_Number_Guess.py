@@ -10,7 +10,7 @@ the random number, tell the user the guess is too low. If the user guesses the
 number, tell the user the guess is correct and stop the game. If the user does
 not guess the number, allow the user to keep guessing until the user gets the
 right answer.
-
+ 
 
 Write the main part of your program as a loop. If the user guesses the number,
 break out of the loop. If the user does not guess the number, continue the loop.
@@ -29,7 +29,8 @@ NOTE! The prompts and output for your program will be in the teminal
 at the bottom of the editor screen; this program does not use the GUI.
 
 """
-
+# Import the required modules
+from tkinter import messagebox, simpledialog, Tk
 import random
 
 def ask_integer(prompt):
@@ -44,7 +45,7 @@ def ask_integer(prompt):
 # Pick the random number
 
 # In your loop:
-
+i = simpledialog.askinteger()
     # Get the user's guess
 
     # If the user's guess is divisible by 7, tell the user to start over

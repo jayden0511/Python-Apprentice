@@ -25,7 +25,7 @@ for i in (5,10,20,25): # Change only this line
     elif i % 5 == 0:
         print(i, '🦡 badger')
     elif i % 3 == 0:
-        print(i, '🍄 mushroom')
+        print(i, '🍄 mushroom') 
     else:
         print(i)
 
