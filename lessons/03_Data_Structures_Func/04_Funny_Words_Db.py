@@ -47,6 +47,7 @@ def add_definition(db, key, value):
 
 
 def delete_definition(db, key):
+    db.add(TextBox.askstring)
     """
     Deletes the definition associated with the given key from the database.
 
