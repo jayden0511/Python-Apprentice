@@ -35,6 +35,10 @@ def check_win(board):
         return X_MARK
     elif board[0][0]==board[1][1] and board[1][1]==board[2][2] and board[2][2]==O_MARK:
         return O_MARK
+    elif board[0][2]==board[1][1] and board[1][1]==board[2][0] and board[2][0]==O_MARK:
+        return O_MARK
+    elif board[0][2]==board[1][1] and board[1][1]==board[2][0] and board[2][0]==X_MARK:
+        return X_MARK
     
     """Check if a player has won on a board 
     Args:
