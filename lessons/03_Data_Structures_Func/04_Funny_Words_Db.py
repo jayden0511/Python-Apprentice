@@ -168,7 +168,7 @@ def handle_enter(event):
     if event.tk_event.keysym == "Return":
         _add_definition()
 
-# Bind enter key press event to handle_enter function
+# Bind enter key press event to handle_enter function 
 app.when_key_pressed = handle_enter
 
 _update_listbox(db) # Initial update of listbox

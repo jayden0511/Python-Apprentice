@@ -14,7 +14,8 @@ if response == "yes":  # ;
     messagebox.showinfo(message="You will rule the world!")  # ;
 else:  # ;
     # 3. Otherwise, tell them to sign up for classes at The League in an error box pop-up.
-    messagebox.showerror(message="You need to sign up for classes at The League!")  # ;
+    messagebox.showerror(message="You need to sign up for classes at The League! SIKE >:D")  # ;
 
 # Run the window's .mainloop() method
 window.mainloop()  # ;
+ 

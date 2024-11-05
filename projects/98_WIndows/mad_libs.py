@@ -36,7 +36,7 @@ story = (
     f"night. Piranhas are attracted to fresh ** ** and will most\n"  # Add Liquid
     f"likely take a bite out of your ** ** if you ** **. Whatever\n"  # Add Liquid, Body Part, Verb
     f"you do, if you have an open wound, try to find another way to get "
-    f"back to the ** **. Good luck!"  # Add Place
+    f"back to the ** **. Good luck!"  # Add Place 
 )
 story2 = (  # ;
     f"Piranhas are more {adjective} during the day, so cross the river at\n"  # ;

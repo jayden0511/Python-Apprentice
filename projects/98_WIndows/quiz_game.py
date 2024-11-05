@@ -34,7 +34,7 @@ messagebox.showinfo(message="Your final score is " + str(score))  # ;
 # remember to convert your score variable to a string using the str() function
 
 
-score = 0  # ;
+score = 0  # ; 
 
 questions = [  # ;
     "Which is better, Python or Java?",  # ;
