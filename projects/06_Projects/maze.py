@@ -23,7 +23,7 @@ def make_maze(x_size=15, y_size=15):
     g = np.array(m.grid)
     
     g[m.start] = 0
-    g[m.end] = 0
+    g[m.end] = 0 
 
     return 2*x_size+1, 2*y_size+1, m, g
 

@@ -35,7 +35,7 @@ def random_walk(walker, steps):
         elif direction ==3:
             walker.right(90)
             walker.forward(10)
-        else:
+        else: 
             walker.forward(10)
     """ Implement a random walk for the turtle
 

@@ -20,5 +20,9 @@ def i():
     check = simpledialog.askstring("Hotel management", "Would you like to check in or out?")
     if check == "check in" or check == "in":
         chosen_rooms = []
-    room_numbers = simpledialog.askstring("Hotel management", "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20")
+        room_number = simpledialog.askstring("Hotel management", room_numbers)
+        guests = simpledialog.askinteger("Hotel management", "How many guests are you traveling with?")
+        nights = simpledialog.askinteger("Hotel management", "How many nights are staying?")
+        price = nights*90
+        messagebox.showinfo("Hotel management")
 i()
