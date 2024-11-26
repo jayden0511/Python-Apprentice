@@ -13,6 +13,8 @@ from tkinter import messagebox, simpledialog, Tk
 window = Tk()     
 window.withdraw()
 
+db = {}
+
 room_numbers = ("1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20")
 
 def i():
@@ -24,5 +26,7 @@ def i():
         guests = simpledialog.askinteger("Hotel management", "How many guests are you traveling with?")
         nights = simpledialog.askinteger("Hotel management", "How many nights are staying?")
         price = nights*90
-        messagebox.showinfo("Hotel management")
-i()
+    elif check == "check out" or check == "out":
+        messagebox.showinfo("Hotel management", "Thank you for your time")
+        messagebox.showinfo("Your cost is:", price)
+    db =[] 
