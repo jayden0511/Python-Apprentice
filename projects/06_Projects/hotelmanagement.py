@@ -14,7 +14,7 @@ window = Tk()
 window.withdraw()
 
 guest = {}
-
+  
 db = {} 
 
 level_floors = ("1 2 3 4 5 6 7 8")
@@ -25,11 +25,12 @@ def i(db):
         print(db)
         ask = simpledialog.askstring("Hotel management" , "What is your name?")
         check = simpledialog.askstring("Hotel management", "Would you like to check in, out or quit?")
+        room_number = simpledialog.askinteger("Hotel management", room_numbers)
         if check == "check in" or check == "in":
-            chosen_rooms = []
+            chosen_rooms = [room_number]
             level_floor = simpledialog.askinteger("Hotel management", level_floors)
-            if level_floor >8:
-                print("Error")
+            if level_floor >8 or level_floor <1:
+                print("Error") 
                 return
                 room_func(room_numbers)
             guests = simpledialog.askinteger("Hotel management", "How many guests are you traveling with?")
@@ -40,7 +41,7 @@ def i(db):
         elif check == "check out" or check == "out":
             messagebox.showinfo("Hotel management", "Thank you for your time")
             messagebox.showinfo("Your cost is:", price)
-            db.pop[ask]
+            db.pop[ask, chosen_rooms]
         elif check == "quit" or check == "quit":
             break
 def room_func(room_numbers, chosen_rooms):
@@ -50,7 +51,7 @@ def room_func(room_numbers, chosen_rooms):
         room_numbers.remove(room_number)
         if room_number >20 or room_number in chosen_rooms:
                 messagebox.showerror("Error")
-                return
+                return room_number
         
-    return room_number
+    
 i(db)
