@@ -28,13 +28,18 @@ def i(db):
         room_number = simpledialog.askinteger("Hotel management", room_numbers)
         if check == "check in" or check == "in":
             chosen_rooms = [room_number]
+            if room_number >20 or room_number <1:
+               print("Error")
+               return
             level_floor = simpledialog.askinteger("Hotel management", level_floors)
             if level_floor >8 or level_floor <1:
                 print("Error") 
                 return
                 room_func(room_numbers)
             guests = simpledialog.askinteger("Hotel management", "How many guests are you traveling with?")
-            nights = simpledialog.askinteger("Hotel management", "How many nights are staying?")
+            if guests >4 or guests <1:
+                simpledialog.askinteger("Hotel management", "ERROR, how many rooms would you like to book?")
+            nights = simpledialog.askinteger("Hotel management", "How many nights are you staying?")
             price = nights*200
             messagebox.showinfo("Your cost is:", price)
             db[ask] = chosen_rooms
@@ -49,9 +54,8 @@ def room_func(room_numbers, chosen_rooms):
     chosen_rooms.append(room_number)
     if room_number in room_numbers:
         room_numbers.remove(room_number)
-        if room_number >20 or room_number in chosen_rooms:
-                messagebox.showerror("Error")
-                return room_number
         
-    
+            
+        
+
 i(db)
